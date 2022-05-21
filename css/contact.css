@@ -1,0 +1,163 @@
+*{
+  padding: 0;
+  
+}
+
+.carousel-inner {
+ height: auto;
+ padding-bottom: 10px;
+}
+
+.content{
+ background-color: white;
+ height: auto;
+
+}
+
+#content__books {
+background-color: rgb(249, 246, 242);
+}
+
+#content__books__heading {
+margin-top:0;
+background-color:rgb(241, 198, 117) ;
+height: -20px;
+padding-top: 20px;
+padding-bottom: 20px;
+justify-content: center;
+display: flex;
+align-items: center;
+}
+
+
+.nav-item{
+  text-decoration: none;
+  display: block;
+  
+
+} 
+.nav-item:hover{
+  background-color: grey;
+}
+
+
+/*book review*/
+
+.book-grid {
+  display: grid;
+  background-color: rgb(249, 246, 242);
+  padding-top:30px;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  margin-top: -25px;
+}
+
+.book-card {
+  --scale: 0.8;
+  cursor: pointer;
+}
+
+.book-card .card-head {
+  position: relative;
+  height: 250px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.book-card:hover .card-img { transform: scale(1.1); }
+
+.book-card .card-overlay {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  
+}
+
+.book-card:hover .card-overlay { opacity: 1; }
+
+
+
+.book-card .card-title {
+  font-size: var(--fs-md);
+  font-weight: var(--fw-5);
+  margin-bottom: 5px;
+}
+
+.book-card:hover .card-title {
+   color: black;
+   }
+
+.book-card .card-info {
+  display: flex;
+  font-size: var(--fs-x-sm);
+  font-weight: var(--fw-5);
+}
+
+.book-card .genre { margin-right: 8px; }
+
+
+
+
+/*footer*/
+
+.content__footer {
+
+  background-color: rgb(241, 198, 117);
+ 
+}
+
+
+/*about*/
+
+#content__books {
+  background-color: rgb(249, 246, 242);
+  }
+  
+  #content__books__heading {
+ 
+  background-color:rgb(241, 198, 117) ;
+  height: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  }
+
+
+
+
+
+
+.carousel-inner-c{
+  height: auto;
+  margin-top: 30px;
+}
+
+
+.content-con
+{
+  background-color: white;
+  height: auto;
+
+}
+
+.mkd-icon-list-holder{
+  padding-bottom: 20px;
+}
+
+
+.image-lok{
+  float:right;
+    margin-left: 150px;
+    margin-right: 30px ;
+    width: 900px;
+    margin-top: -30px;
+    
+}
+
+.mkd-st-title{
+  margin-left: 50px;
+}
