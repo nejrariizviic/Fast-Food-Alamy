@@ -97,7 +97,7 @@
 /*footer*/
 
 .content__footer {
-  background-color: rgb(241, 198, 117);
+  background-color: black;
 }
 
 
@@ -110,7 +110,7 @@
 
 #content__foods__about__heading {
   margin-top:-15px;
-  background-color:rgb(241, 198, 117) ;
+  background-color:black ;
   height: -20px;
   padding-top: 20px;
   padding-bottom: 20px;

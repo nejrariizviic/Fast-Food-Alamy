@@ -18,7 +18,7 @@
 
 #content__foods__heading {
   margin-top:0;
-  background-color:rgb(241, 198, 117) ;
+  background-color:black ;
   height: -20px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -42,7 +42,7 @@
 
 .food-grid {
   display: grid;
-  background-color: rgb(249, 246, 242);
+  background-color: black;
   padding-top:30px;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
   gap: 30px;
@@ -105,7 +105,7 @@
 /*footer*/
 
 .content__footer {
-  background-color: rgb(241, 198, 117);
+  background-color: black;
 }
 
 
@@ -116,7 +116,7 @@
 }
   
 #content__foods__heading {
-  background-color:rgb(241, 198, 117) ;
+  background-color:black ;
   height: -20px;
   padding-top: 20px;
   padding-bottom: 20px;
