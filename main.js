@@ -21,8 +21,9 @@ const renderFoods = (foods) => {
             <div class="card-body">
                 <h5 class="card-title">${food.name}</h5>
                 <p class="card-text">${food.price}KM</p>
-                <button type="button" onclick="fillEditData(${food.id})" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#editFood" data-bs-whatever="@getbootstrap">Edit</button>
-                <button type="button" onclick="deleteFood(${food.id})" class="btn btn-danger">Delete</button>
+                <button type="button" onclick="fillEditData(${food.id})" class="btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#editFood" data-bs-whatever="@getbootstrap">Edit</button>
+                <button type="button" onclick="deleteFood(${food.id})" class="btn btn-outline-secondary">Delete</button>
+                <button type="button" class="btn btn-outline-dark btn-sm">Order</button>
             </div>
         </div>
         `;
