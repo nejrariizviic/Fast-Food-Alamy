@@ -1,45 +1,45 @@
-*{
-   padding: 0;
-   
+* {
+   padding: 0; 
 }
+
 
 .carousel-inner {
   height: auto;
   padding-bottom: 10px;
 }
 
+
 .content{
   background-color: white;
   height: auto;
-
 }
 
+
 #content__foods {
-background-color:  rgb(241, 198, 117);
+  background-color:  rgb(241, 198, 117);
 }
 
 
 #content__foods__heading {
-background-color: rgb(241, 198, 117) ;
-height: auto;
-margin-top: -20px;
-padding-top: 20px;
-padding-bottom: 20px;
-justify-content: center;
-display: flex;
-align-items: center;
+  background-color: rgb(241, 198, 117) ;
+  height: auto;
+  margin-top: -20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 
 
 .nav-item{
   text-decoration: none;
   display: block;
-  
 } 
 
 
 
-/*book review*/
+/*foods review*/
 
 .more-foods-grid {
   display: grid;
@@ -50,6 +50,7 @@ align-items: center;
   margin-bottom: 60px;
   margin-top: -25px;
 }
+
 
 .more-foods-card {
   --scale: 0.8;
@@ -63,10 +64,8 @@ align-items: center;
   position: relative;
   height: auto;
   border-radius: 15px;
- padding-bottom: 40px;
+  padding-bottom: 40px;
   overflow: hidden;
- 
- 
 }
 
 
@@ -74,54 +73,47 @@ align-items: center;
   position: absolute;
   inset: 0;
   opacity: 0;
-  
 }
+
 
 .foods-card:hover .card-overlay {
    opacity: 1; 
-  }
-
+}
 
 
 .foods-card .card-title {
   font-size: var(--fs-md);
   font-weight: var(--fw-5);
   margin-bottom: 5px;
- 
 }
 
-.card-info{
+
+.card-info {
   color: rgb(241, 198, 117);
 }
 
-.card-body{
+
+.card-body {
   color: rgb(241, 198, 117);
 }
+
 
 .foods-card .card-info {
   display: flex;
   font-size: var(--fs-x-sm);
   font-weight: var(--fw-5);
-  
 }
-
-
-
-
-
 
 /*footer*/
 
 .content__footer {
-
   background-color: rgb(241, 198, 117);
- 
 }
 
 
 /*img*/
 
-#content__foods__cards{
+#content__foods__cards {
   background-color: white;
   padding-top: 50px;
   display:flex;
@@ -130,14 +122,14 @@ align-items: center;
   padding-left: 20px;
   justify-content: center;
   flex-wrap: wrap;
-  
 }
 
-.text-uppercase{
+
+.text-uppercase {
   margin-top: 30px;
 }
 
-/*other books*/
+/*other food*/
 
 .more-foods-grid {
   display: grid;
@@ -150,8 +142,8 @@ align-items: center;
   gap: 30px;
   margin-bottom: 60px;
   margin-top: -25px;
-  
 }
+
 
 .more-foods-card {
   --scale: 0.8;
@@ -161,14 +153,15 @@ align-items: center;
 
 .section-heading {
   margin-top:0;
-background-color:rgb(241, 198, 117) ;
-height: -20px;
-padding-top: 20px;
-padding-bottom: 40px;
-justify-content: center;
-display: flex;
-align-items: center;
+  background-color:rgb(241, 198, 117) ;
+  height: -20px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
+
 
 .more-foods-card .card-head {
   position: relative;
@@ -178,9 +171,11 @@ align-items: center;
   overflow: hidden;
 }
 
+
 .more-foods-card:hover .card-img { 
   transform: scale(1.1); 
 }
+
 
 .more-foods-card .card-overlay {
   position: absolute;
@@ -189,10 +184,10 @@ align-items: center;
   backdrop-filter: blur(5px);
 }
 
+
 .more-foods-card:hover .card-overlay { 
   opacity: 1;
  }
-
 
 
 .more-foods-card .card-title {
@@ -211,9 +206,7 @@ align-items: center;
   font-weight: var(--fw-5);
 }
 
-.more-foods-card .genre { 
-  margin-right: 8px; 
-}
+
  
 
 
