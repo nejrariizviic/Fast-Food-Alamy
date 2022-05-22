@@ -108,24 +108,27 @@
   background-color: rgb(241, 198, 117);
 }
 
+
 .carousel-inner-blog {
   height: auto;
   padding-bottom: 10px;
 }
 
-.carousel-control-prev{
+
+.carousel-control-prev {
   float: left;
   margin-top: 70px;
 }
 
-#content__foods__blog__heading{
+
+#content__foods__blog__heading {
   background-color: black;
   padding-top: 20px;
   text-align: center;
   padding-bottom: 20px;
   margin-top: -10px;
-
 }
+
 
 .image-blog {
   height: auto;
@@ -133,26 +136,23 @@
   margin-top: -350px;
   margin-left: 50px;
   display: block;
-  
-
 }
 
 
 .paragraf {
-background-color: rgb(179, 179, 252);
-justify-content:center;
-text-align:center;
-margin-right: 70px;
-padding: 40px;
-margin-left: 900px;
-justify-content: center;
-margin-top: 200px;
-display: block;
-
+  background-color: rgb(179, 179, 252);
+  justify-content:center;
+  text-align:center;
+  margin-right: 70px;
+  padding: 40px;
+  margin-left: 900px;
+  justify-content: center;
+  margin-top: 200px;
+  display: block;
 }
 
-.container{
 
+.container {
 	position: relative;
 	width:1100px;
 	display: flex;
@@ -160,10 +160,10 @@ display: block;
 	align-items: center;
 	flex-wrap: wrap;
 	padding: 30px;
-	
 }
 
-.container .card{
+
+.container .card {
 	width:308px;
 	position: relative;
 	height: 400px;
@@ -174,24 +174,82 @@ display: block;
 	flex-direction: column;
 	box-shadow: 0.5px 10px #e6e6e6;
 	transition:0.3s ease-in-out;
-	
 }
-.container .card .imgBx{
+
+
+.container .card .imgBx {
 	position: relative;
 	width:260px;
 	height: 260px;
 	top: -60px;
 	left:20px;
 	box-shadow: 0 5px 20px rbga (0,0,0,1.2);
-
 }
 
-.container .card .imgBx img
-{
+
+.container .card .imgBx img {
 	max-width: 100%;
 	border-radius: 10px;
 }
 
-.imgBx:hover img{
+
+.imgBx:hover img {
 	transform: scale(1.1);
+}
+
+
+.gallery .gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:2rem;
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+
+.gallery .gallery-container .box {
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.gallery .gallery-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.gallery .gallery-container .box .icon {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top:0; left:0;
+  z-index: 10;
+  height: 100%;
+  width: 100%;
+  background: var(--dark-bg);
+}
+
+
+.gallery .gallery-container .box .icon i {
+  font-size: 6rem;
+  color:var(--white);
+}
+
+
+.gallery .gallery-container .box:hover .icon {
+  display: flex;
+}
+
+
+.heading {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom:20px ;
+  color: white;
+  text-align: center;
 }
