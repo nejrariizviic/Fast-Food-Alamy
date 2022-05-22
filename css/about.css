@@ -126,6 +126,7 @@
   margin-bottom: 40px;
   margin-left: 30px;
   margin-right: 30px;
+  text-align: justify;
 }
 
 .image {
@@ -143,6 +144,8 @@
   float: left;
   padding: 15px;
   background-color: black;
+  margin-right: 20px;
+  margin-bottom: -20px;
 }
 
 
@@ -151,6 +154,7 @@
   float: left;
   padding: 15px;
   background-color: black;
+  margin-right: 20px;
 }
 
 .image-n {
@@ -158,4 +162,6 @@
   float: right;
   padding: 15px;
   background-color: black;
+  margin-left: 20px;
 }
+
