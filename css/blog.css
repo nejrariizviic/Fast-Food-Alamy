@@ -108,8 +108,29 @@
   background-color: rgb(241, 198, 117);
 }
 
+.carousel-inner-blog {
+  height: auto;
+  padding-bottom: 10px;
+}
 
+.carousel-control-prev{
+  float: left;
+  margin-top: 70px;
+}
 
+#content__foods__blog__heading{
+  background-color: black;
+  padding-top: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
 
+.image-blog {
+  height: 500px;
+  width: 500px;
+}
 
-  
+.text-blog{
+  float: right;
+}
