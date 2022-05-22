@@ -61,7 +61,7 @@ const editFood = () => {
         })
     })
     .then(res => {
-        console.log(`Status code: ${res.status}`);
+        console.log(`Put status code: ${res.status}`);
         if (res.ok) {
             let kartica = document.getElementById(foodFormId);
             kartica.children[0].src = foodFormImage;
@@ -76,7 +76,7 @@ const deleteFood = (id) => {
         method: 'DELETE'
     })
     .then(res => {
-        console.log(`Status code: ${res.status}`);
+        console.log(`Delete status code: ${res.status}`);
         if (res.ok) {
             let kartica = document.getElementById(id);
             kartica.remove();
@@ -103,7 +103,7 @@ const addFood = () => {
         })
     })
     .then(res => {
-        console.log(`Status code: ${res.status}`);
+        console.log(`Post status code: ${res.status}`);
         if (res.ok) {
             const foodsRow = document.getElementById('content__foods__cards');
 
@@ -138,131 +138,3 @@ const addFood = () => {
 
 
 
-
-
-/*
-fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
-.then(res => {
-    if(!res.ok) {
-        throw Error('[GRESKA] Dogodila se greska.');
-    } 
-    return res.json();
-})
-.then(data => {
-    const cardList = document.querySelector('#content__food__cards');
-    let cards = '';
-
-    data.forEach(element => {
-        cards += `
-            <div class="card" style="width: 18rem; height: auto; margin: 0 20px; margin-top: 20px;" id="${element.id}">
-                <img src="${element.imageUrl}" class="card-img-top" alt="..." style="width: 100%; height: 60%;">
-                <div class="card-body">
-                    <h5 class="card-title text-dark">${element.name}</h5>
-                    <p class="card-text text-dark">Cijena: ${element.price} KM</p>
-                    <button href="" class="btn content__food__cards__root-buttons" onclick="editFood(this)" id="content__food__cards__root-buttons-edit"><span class="text-light">Uredi</span></button>
-                    <button href="" class="btn content__food__cards__root-buttons" onclick="deleteFood(this)" id="content__food__cards__root-buttons-delete"> <span class="text-light">Izbriši</span></button>
-                    <button href="" class="btn btn-primary" onclick="dodajUKorpu(this)"><span class="text-light">Naruči</span></button>
-                
-                    <div class="modal fade" id="rezervacija" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Reservation your book:</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Frst name:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Last name:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">E-mail:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Contact:</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="mb-3">
-                                <label for="message-text" class="col-form-label"> Day:</label>
-                                <textarea class="form-control" id="message-text"></textarea>
-                              </div>
-                             
-                            </form>
-                          </div>
-                    
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Reservation</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    </div>
-                </div>
-            </div>  
-                              
-        `
-    })
-
-    cardList2.innerHTML = cards; 
-})
-
-
-fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
-.then(res => {
-    if(!res.ok) {
-        throw Error('[GRESKA] Dogodila se greska.');
-    } 
-    return res.json();
-})
-.then(data => {
-    const cardList = document.querySelector('#content__food__cards');
-    let cards = '';
-
-    data.forEach(element => {
-        cards += `
-            <div class="card" style="width: 18rem; height: auto; margin: 0 20px; margin-top: 20px;" id="${element.id}">
-                <img src="${element.imageUrl}" class="card-img-top" alt="..." style="width: 100%; height: 60%;">
-                <div class="card-body">
-                    <h5 class="card-title text-dark">${element.name}</h5>
-                    <p class="card-text text-dark">Cijena: ${element.price} KM</p>
-                    <button href="" class="btn content__food__cards__root-buttons" onclick="editFood(this)" id="content__food__cards__root-buttons-edit"><span class="text-light">Uredi</span></button>
-                    <button href="" class="btn content__food__cards__root-buttons" onclick="deleteFood(this)" id="content__food__cards__root-buttons-delete"> <span class="text-light">Izbriši</span></button>
-                    <button href="" class="btn btn-primary" onclick="dodajUKorpu(this)"><span class="text-light">Naruči</span></button>
-                </div>
-            </div>                    
-        `
-    })
-
-    cardList.innerHTML = cards; 
-})
-
-
-const deleteBooks = (books) => {
-  let booksId = books.parentElement.parentElement.id;
-  
-  fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/books/${booksId}`, {
-      method: 'DELETE'
-  })
-  .then(res => {
-      if (res.ok) {
-          console.log(`Delete status code: ${res.status}`);
-          
-          let booksCard = document.getElementById(booksId);
-         booksCard.remove();
-         console.log(res);
-          
-      } else {
-          let popup = document.querySelector('#error-pop-up');
-      }
-  })
-}
-
-
-*/
